@@ -1,0 +1,50 @@
+```markdown
+```yaml
+name: Atualizar Site GERU
+
+on: # Define quando o workflow será executado
+  schedule:
+    # Executa a cada 6 meses (ex: Janeiro e Julho, no dia 1, à meia-noite)
+    # Você pode ajustar a frequência conforme necessário. Ex: '0 0 1 */6 *'
+    # Para testar, você pode usar '0 0 * * *' para diariamente ou '0 * * * *' para a cada hora.
+    - cron: '0 0 1 */6 *' # Cron format: minute hour day_of_month month day_of_week
+  workflow_dispatch: # Permite acionar o workflow manualmente na interface do GitHub
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # O ambiente onde o job será executado
+
+    steps:
+    - name: Checkout do Repositório # Clona o repositório para o runner
+      uses: actions/checkout@v4
+
+    - name: Configurar Python # Instala o Python no ambiente
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9' # Use a versão do Python que você usou para desenvolver o script
+
+    - name: Instalar Dependências # Instala as bibliotecas Python necessárias
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests beautifulsoup4
+
+    - name: Executar Script de Scrape e Geração # Executa o seu script Python
+      run: python scrape_and_generate.py
+
+    - name: Configurar Git para Commit # Configura o usuário Git para o commit automatizado
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: Verificar Alterações e Commit # Adiciona e commita os arquivos HTML gerados
+      run: |
+        git add *.html
+        git diff-index --quiet HEAD || git commit -m "Atualiza dados de pesquisadores (automatizado)"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token gerado automaticamente pelo GitHub Actions
+
+    - name: Push para o Repositório # Envia as alterações para o branch principal
+      run: git push origin main # Certifique-se de que 'main' é o nome do seu branch principal
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
