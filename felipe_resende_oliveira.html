@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Resende Oliveira</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e6ffe6 0%, #ccffcc 100%); /* Light green gradient */
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #4CAF50; /* Darker green */
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            flex-grow: 1;
+        }
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .researcher-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #4CAF50;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2E8B57; /* Sea green */
+            border-bottom: 2px solid #D4EDDA; /* Light green separator */
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 1.8em;
+        }
+        p {
+            margin-bottom: 1em;
+            text-align: justify; /* Adicionado para justificar o texto */
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 0.8em;
+        }
+        .button-link {
+            display: inline-block;
+            background-color: #66BB6A; /* Medium green */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 15px;
+        }
+        .button-link:hover {
+            background-color: #4CAF50;
+            transform: translateY(-2px);
+        }
+        .back-button {
+            display: inline-block;
+            background-color: #B0BEC5; /* Grey */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #90A4AE;
+        }
+        .productivity-dashboard {
+            background-color: #F0FFF0; /* Very light green */
+            border: 1px solid #D4EDDA;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .productivity-dashboard h3 {
+            color: #2E8B57;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .metric-card {
+            display: inline-block;
+            background-color: #E0FFE0;
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+        }
+        .metric-value {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #4CAF50;
+            display: block;
+        }
+        .metric-label {
+            font-size: 0.9em;
+            color: #555;
+            display: block;
+            margin-top: 5px;
+        }
+        .footer {
+            margin-top: auto; /* Push footer to bottom */
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Felipe Resende Oliveira</h1>
+    </div>
+    <div class="container">
+        <div class="profile-header">
+            <img src="./foto_felipe.png" alt="Foto de Felipe Resende Oliveira" class="researcher-photo">
+            <p><a href="http://lattes.cnpq.br/5724942282637254" target="_blank" class="button-link">Currículo Lattes</a></p>
+        </div>
+        <h2>Sobre</h2><p>Possui graduação em Economia pela Universidade Federal de Goiás (2012) com mobilidade acadêmica pela Universidade de Brasília (2011). Mestrado (2014) e Doutorado (2018) em economia pelo Programa de Pós-Graduação em Economia (PIMES) da Universidade Federal de Pernambuco. Atua no Departamento de Estudos Econômicos (DEE) do Conselho Administrativo de Defesa Econômica (CADE) e é Professor do Programa de Pós-Graduação em Economia da Universidade Federal de Mato Grosso. É Pesquisador da Área de Pesquisas Econômicas do Núcleo de Pesquisa Econômicas e Socioambientais - NuPES/UFMT e professor supervisor do Projeto Equidade.info. Seus interesses acadêmicos envolvem Avaliação de Políticas, Defesa da Concorrência e Economia da Educação.</p>
+        
+        <div class="productivity-dashboard">
+            <h3>Produtividade</h3>
+            <div class="metric-card">
+                <span class="metric-value">23</span>
+                <span class="metric-label">Publicações Registradas</span>
+            </div>
+        </div>
+        
+        <h2>Publicações</h2><ul><li>FERREIRA, J. F.; COSTA, E. M.; KHAN, A. S.; Irffi, G. D.; LIMA, A. F. R.; e, OLIVEIRA, FELIPE. Avaliação de impacto do Programa Um Computador Por Aluno no desempenho escolar. Estudos em Avaliação Educacional (Online), v. 37, p. e11072, 2026.</li><li>OLIVEIRA, A. C. S.; OLIVEIRA, F. R.; e, RESENDE, G. O. Efeito do Programa Sukatech em indicadores educacionais: evidências para o estado de Goiás. REVISTA TECNOLOGIA E SOCIEDADE (ONLINE)xR, v. 26, p. 68-96, 2026.</li><li>OLIVEIRA, FELIPE RESENDE; LIMA, R. C. A.; and, REIS, D. H. A. The Cement Cartel and the Overcharge CADE Prevented. REVISTA DO IBRAC, v. 30, p. 119-145, 2025.</li><li>SILVA, R. G.; SEVERINO, L. S. M.; and, OLIVEIRA, FELIPE. Estimating the overcharge of the liquefied petroleum gas cartel in Brazil?s Federal District: Evidence from before-and-after and difference-in-differences approaches. REVISTA DE DEFESA DA CONCORRÊNCIA - RDC, v. 7, p. 140-159, 2025.</li><li>CASAGRANDE, DIEISON; EMANUEL, LUCAS; FREITAS, CARLOS; and, OLIVEIRA, FELIPE . Climate adaptation policies and rural income: Evidence from social technologies in Brazil. WORLD DEVELOPMENT IcR, V. 181, p. 106683-13, 2024. Citações: WEB OF SCENCE- 7 | SCOPUS 1</li><li>ARRUDA, R. C. M.; OLIVEIRA, FELIPE; CASAGRANDE, D. L.; e, RESENDE, G. O. PROGRAMA DE TRAŃSFERÊNCIA DE RENDA E DESPESA FAMILIAR: EVIDENCIAS DO PROGRAMA PRÓ-FAMILIA DO ESTADO DE MATO GROSSO. Revista Brasileira de Estudos Regionais e Urbanos (RBERU), v. 8, p. 68-</li><li>CASAGRANDE, DIEISON; SILVA, L. E.; FREITAS, C. E.; LIMA, A. F. R.; NISHIMURA, F. N.; and, OLIVEIRA, FELIPE. Public Food Procurement and Production: Evidence of the Food Acquisition Program in Brazil. Food Policy IcR, v. 126, p. 1/102656, 2024. Citações: WEB OF SCENCE* 5 | SCOPUS 6</li><li>RAPOSO, I. P. A.; OLIVEIRA, FELIPE RESENDE; e, SILVA, J. L. B. A. O comportamento familiar pode afetar o desempenho escolar e aspirações futuras dos estudantes de raças distintas?. Economia e Sociedade (UNICAMP), v. 32, p. 669-689, 2023.</li><li>TURINI, L R.; ABREU, V. H.; LIMA, E. B. N. R.; e, OLIVEIRA, FELIPE RESENDE. Analise da performance do sistema de abastecimento de agua nos municípios do Mato Grosso: comparação prestação do serviço público versus privado. URBE. REVISTA BRASILEIRA DE GESTÃO URBANA JCR, v. 15, p. 1-21, 2023.</li><li>MARKUS, N. P.; OLIVEIRA, F. R.; NISHIMURA, F. N.; RAPOSO, I. P. A. The Impact of Early Childhood Education on Mathematics  Performance Evidence for Public Elementary School Students in the City of Recife. Planejamento e Politicas Públicas (PPP) - IPEA, v. 67, p. 75-100, 2023.</li><li>OLIVEIRA, FELIPE RESENDE; PAZELLO, ELAINE TOLDO; and, MENEZES, Tatiane Almeida de. IS IT POSSIBLE TO DEVELOP SOCIAL-EMOTIONAL SKILLS OF ADOLESCENTS? EVIDENCE FROM BRAZILIAN PROGRAM. Análise Econômica (UFRGS) on line, v. 39, p. 53-81, 2021.</li><li>TURINI, L. R.; ABREU, V. H. S.; LIMA, E. B. N. R.; e, OLIVEÍRA, FELIPE RESENDE. PANORAMA DO SISTEMA DE ABASTECIMENTO DE AGUA DE PEQUENAS CIDADES EM UM ESTADO COM PRESTAÇÃO DE SERVIÇO DESCENTRALIZADA. PIXO? REVISTA DE ARQUITETURA, CIDADE E CONTEMPORANEIDADE, v. 5, p. 436-451, 2021.</li><li>RESENDE, G. O.; OLIVEIRA, F. R.; MENEZES, R. T.; e, ZOGHBI, A. C. Efeitos do Programa de Qualificação Profissional Bolsa Futuro na empregabilidade e salários dos trabalhadores. PESQUISA E PLANÉJAMENTO ECONÔMICO (RIO DE JANEIRO), v. 49, p. 69-98, 2019.</li><li>RESENDE, G. O.; RESENDE, G. M.; e, OLIVEIRA, F. R. Avaliação de (in)eficiência do programa Empresarial do Fundo Constitucional de Financiamento do Centro-Oeste (FCO) em Goiás. Revista Brasileira de Estudos Regionais e Urbanos, v. 11, p. 93-110, 2017.</li><li>CASAGRANDE, D. L.; SANTOS, R. A. V.; SILVA, V. F.; OLIVEIRA, F. R.; e, BEZERRA, J. F. Determinantes do Salário Real na Indústria do Brasil: Uma análise de 2002 a 2015. ESPACIOS (CARACAS), v. 38, p. 23, 2017. Citações: scopus 1</li><li>SILVA JUNIOR, I. B.; OLIVEIRA, F. R.; e, MENEZES, T. A. Impactos das Políticas de Segurança Sobre a Difusão da Criminalidade Entre as Cidade: Uma Aplicação dos Modelos de Econometria Espacial. DOCUMENTO/MONUMENTO, v. 22, p. 220-237, 2017. REVISTA ELETRONICA</li><li>OLIVEIRA, FELIPE RESENDE; DE MENEZES, TATIANE ALMEIDA; IRFFI, GUILHERME; and, OLIVEIRA, GUILHERME RESENDE. Bullying effect on student?s performance. Revista Economia da ANPEC, v. 19, p. 57-73, 2017. Citações: ScoPus 35</li><li>OLIVEIRA, F. R.; CASAGRANDE, D. L.; STUDART, G. V.; SILVA JUNIOR, I. B.; e, GUIMARAES, P. H. M. Métodos de previsão para a taxa de desemprego mensal: uma análise de séries temporais. Revista de Economia da UEG. Seção Eletrônica, v. 13, p. 63-90, 2016.</li><li>GUIMARAES, P. H. M.; RAMOS, F. S.; CASAGRANDE, D. L.; e, OLIVEIRA, F. R. Simulações de Tarifas de Transporte Público sob a ótica do Modelo Principal-Agente: O caso do Sistema de Passageiros de Característica Urbana do Aglomerado Urbano Cuiabá. Documento/Monumento, v. 20, p. 239-253, 2016. Transporte de Coletivo Rodoviário Intermunicipal Várzea Grande. Revista Eletrônica</li><li>OLIVEIRA, F. R.; e, MENEZES, T. A. . Detecção de clusters no microcrédito em Goiânia. Revista Brasileira de Estudos Regionais e Urbanos, v. 9, p. 228-242, 2015.</li><li>OLIVEIRA, F. R.; CASAGRANDE, D. L.; STUDART, G. V.; SILVA JUNIOR, I. B.; e, GUIMARAES, P. H. M. Salario, educação e experiencia: Uma abordagem econométrica. Nexos Econômicos (Salvador), v. 9, p. 7-20, 2015. Citações: SCOPUS 1</li><li>OLIVEIRA, F. R.; Holanda Rocha, S.; NEVES JUNIOR, E. C.; LIMA JUNIOR, J. A.; e, LIMA, R. C. A. Modelagem da proporção de inadimplentes entre tomadores de empréstimo no Banco do Povo de Goiás utilizando regressão beta. Conjuntura Econômica Goiana, v. 29, p. 101-118, 2014.</li><li>OLIVEIRA, F. R.; RESENDE, G. O.; CASAGRANDE, D. L.; e, GUIMARAES, P. H. M. Inadimplência e Microcrédito: Um estudo para o Banco do Povo de Goiás. Conjuntura Econômica Goiana, v. 31, p. 97-115, 2014.</li></ul>
+        <a href="./index.html" class="back-button">← Voltar para a Página Principal</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Grupo de Estudos Regionais e Urbanos. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
+        
