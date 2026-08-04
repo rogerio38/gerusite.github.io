@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Henrique Monteiro Guimarães</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e6ffe6 0%, #ccffcc 100%); /* Light green gradient */
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #4CAF50; /* Darker green */
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            flex-grow: 1;
+        }
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .researcher-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #4CAF50;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2E8B57; /* Sea green */
+            border-bottom: 2px solid #D4EDDA; /* Light green separator */
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 1.8em;
+        }
+        p {
+            margin-bottom: 1em;
+            text-align: justify; /* Adicionado para justificar o texto */
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 0.8em;
+        }
+        .button-link {
+            display: inline-block;
+            background-color: #66BB6A; /* Medium green */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 15px;
+        }
+        .button-link:hover {
+            background-color: #4CAF50;
+            transform: translateY(-2px);
+        }
+        .back-button {
+            display: inline-block;
+            background-color: #B0BEC5; /* Grey */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #90A4AE;
+        }
+        .productivity-dashboard {
+            background-color: #F0FFF0; /* Very light green */
+            border: 1px solid #D4EDDA;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .productivity-dashboard h3 {
+            color: #2E8B57;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .metric-card {
+            display: inline-block;
+            background-color: #E0FFE0;
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+        }
+        .metric-value {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #4CAF50;
+            display: block;
+        }
+        .metric-label {
+            font-size: 0.9em;
+            color: #555;
+            display: block;
+            margin-top: 5px;
+        }
+        .footer {
+            margin-top: auto; /* Push footer to bottom */
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Paulo Henrique Monteiro Guimarães</h1>
+    </div>
+    <div class="container">
+        <div class="profile-header">
+            <img src="./images/foto_paulo.png" alt="Foto de Paulo Henrique Monteiro Guimarães" class="researcher-photo">
+            <p><a href="http://lattes.cnpq.br/2406395318926345" target="_blank" class="button-link">Currículo Lattes</a></p>
+        </div>
+        <h2>Sobre</h2><p>Doutor em Economia pelo Programa de Pós-Graduação em Economia (PIMES) da Universidade Federal de Pernambuco (UFPE). Possui formação multidisciplinar, sendo mestre em Economia e bacharel em Estatística e em Economia pela Universidade Federal de Mato Grosso (UFMT). É especialista em Gestão Pública (IFMT), Gestão de Cidades Inteligentes (UNIALFA) e Gestão no Agronegócio (UFR). Atualmente, é graduando em Direito pela FDC e realiza especialização em Direito da Mineração, Ambiental e ESG pelo Instituto Minere. Servidor público de carreira desde 2005, atua como Analista Regulador - Economista na Agência de Regulação dos Serviços Públicos Delegados do Estado de Mato Grosso (AGER-MT), onde exerceu o mandato de Diretor Regulador de Transportes e Rodovias (20192023). Atuou como Coordenador de Métodos Estatísticos na SEPLAN-MT e Coordenador de Competitividade Industrial na SEDEC-MT. Suas áreas de interesse incluem: Regulação Econômica, Serviços Públicos e Concessões, Mineração, Direito Regulatório, Direito Minerário, Economia da Energia, Crescimento e Desenvolvimento Econômico, e Métodos Quantitativos.</p>
+        
+        <div class="productivity-dashboard">
+            <h3>Produtividade</h3>
+            <div class="metric-card">
+                <span class="metric-value">12</span>
+                <span class="metric-label">Publicações Registradas</span>
+            </div>
+        </div>
+        
+        <h2>Publicações</h2><ul><li>GUIMARÃES, P. H. M.; PASCOA, M. A. R.; e, CRUZ, J. N. Crescimento Econômico, Distribuição e Convergência de Renda em Mato Grosso no período entre 2002 e 2021. CADERNO DE GEOGRAFIA, v. 36, p. 127, 2026.</li><li>GUIMARÃES, P. H.; GUIMARAES, M. H. M.; e, MIRANDA, T. A. C. Royalties da mineração e desigualdade territorial: distribuição da CFEM e TFRM em Mato Grosso (2020-2025). REGRASP, v. v. 11|n.1, p. 211-224, 2026.</li><li>OLIVEIRA, R. R.; ALVARADO, E. F.; LOPES, L. I. V.; SILVA, N. R.; e, GUIMARAES, P. H. M. Serviços prestados pelos metrôs de Buenos Aires e São Paulo: analise do conteúdo gerado da plataforma Trip advisor. ROSA DOS VENTOS ICR, V. 17, p. e170115, 2025.</li><li>KUHN, C. E. S.; e, GUIMARÃES, P. H. M. Política de estágio da Universidade Federal de Mato Grosso e a transição escola-trabalho. REVISTA TERRAE DIDATICA, v. 15, p. e019036, 2019.</li><li>ANANIAS, D. D.; e, GUIMARÃES, P. H. M. Análise Espacial da Política de Crédito Rural Agrícola no Mato Grosso em 2010 e 2017. REVISTA ELETRÔNICA DOCUMENTO/MONUMENTO, v. 26, p. 184-204, 2019.</li><li>GUIMARÃES, P. H. M.; RAMOS, F. S.; e, BEZERRA, D. R. C. Transporte Público e a Importância do Desenho da Agência: O Caso da Agência Estadual de Regulação do Estado de Mato Grosso (AGER). RĒVISTA ELETRONICA DOCUMENTO/MONUMENTO, v. 23, p. 266-287, 2018.</li><li>OLIVEIRA, F. R.; CASAGRANDE, D. L.; STUDART, G. V.; SILVA JUNIOR, I. B. S.; e, GUIMARÃES, P. H. M. Métodos de previsão para a taxa de desemprego mensal: uma análise de séries temporais. Revista de Economia da UEG. Seção Eletrônica, v. 13, p. p. 63-90-90, 2016.</li><li>GUIMARÃES, P. H. M.; MOURA, K.; PEREIRA, R.; OLIVEIRA, R. C.; e, BEZERRA, J. F. A Curva de Phillips Novo- Keynesiana Para o Brasil no Período de 2002-2015. Revista Eletrônica Documento/Monumento, v. 17, p. 340-356, 2016.</li><li>GUIMARAES, P. H. M.; RAMOS, F. S.; CASAGRANDE, D. L.; e, OLIVEIRA, F. R. Simulações de Tarifas de Transporte Público sob a ótica do Modelo Principal-Agente: O caso do Sistema de Passageiros de Característica Urbana do Aglomerado Urbano de Transporte de Coletivo Rodoviário Intermunicipal Grande Cuiabá Várzea. Revista Eletrônica Documento/Monumento, v. 20, p. 239-253, 2016.</li><li>OLIVEIRA, F. R.; CASAGRANDE, D. L.; STUDART, G. V.; SILVA JUNIOR, I. B. S.; e, GUIMARÃES, P. H. M. Salário, educação e experiência: Uma abordagem econométrica. NEXOS ECONOMICOS, v. 9, p. 7-20, 2015. Citações: Scopus 1</li><li>OLIVEIRA, F. R.; OLIVEIRA, G. R.; CASAGRANDE, D. L.; e, GUIMARÃES, P. H. M. Inadimplência e Microcrédito: Um estudo para o Banco do Povo de Goiás. Conjuntura Econômica Goiana, v. 31, p. 97-116, 2014.</li><li>GUIMARÃES, P. H. M.; FIGUEIREDO, A. M. R.; e, BONJOUR, S. C. M. O sistema de distribuição de gás natural em Mato Grosso: uma abordagem institucionalista. Panorama Socioeconómico. Talca: Utalca, Chile. v. 1, n.41, Dec. 2010. 22p. Panorama Socioeconómico, v. 1, p. 126-143, 2010.</li></ul>
+        <a href="./index.html" class="back-button">← Voltar para a Página Principal</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Grupo de Estudos Regionais e Urbanos. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
+        
