@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inaldo Bezerra da Silva Júnior</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, rgba(240, 255, 240, 0.9) 0%, rgba(220, 255, 220, 0.95) 100%); /* Very light green gradient, high transparency */
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: rgba(90, 190, 90, 0.8); /* Softer green with more transparency */
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9); /* White with more transparency */
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+            flex-grow: 1;
+        }
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .researcher-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #7EC0EE; /* Softer blue border */
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #60B060; /* Softer green */
+            border-bottom: 2px solid rgba(190, 230, 190, 0.7); /* Lighter, more transparent separator */
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 1.8em;
+        }
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+            text-align: justify;
+        }
+        li {
+            margin-bottom: 0.8em;
+            text-align: justify;
+        }
+        .button-link {
+            display: inline-block;
+            background-color: rgba(120, 200, 120, 0.8); /* Softer green with transparency */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-top: 15px;
+        }
+        .button-link:hover {
+            background-color: rgba(100, 180, 100, 0.9);
+            transform: translateY(-2px);
+        }
+        .back-button {
+            display: inline-block;
+            background-color: rgba(170, 180, 190, 0.8); /* Softer grey with transparency */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: rgba(150, 160, 170, 0.9);
+        }
+        .productivity-dashboard {
+            background-color: rgba(230, 250, 230, 0.8); /* Very light green, high transparency */
+            border: 1px solid rgba(200, 240, 200, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .productivity-dashboard h3 {
+            color: #60B060;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .metric-card {
+            display: inline-block;
+            background-color: rgba(210, 240, 210, 0.7); /* Light green, more transparency */
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+        }
+        .metric-value {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #70D070;
+            display: block;
+        }
+        .metric-label {
+            font-size: 0.9em;
+            color: #555;
+            display: block;
+            margin-top: 5px;
+        }
+        .footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            background-color: rgba(255, 255, 255, 0.7); /* White with transparency */
+            border-top: 1px solid rgba(220, 220, 220, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Inaldo Bezerra da Silva Júnior</h1>
+    </div>
+    <div class="container">
+        <div class="profile-header">
+            <img src="images/foto_inaldo.png" alt="Foto de Inaldo Bezerra da Silva Júnior" class="researcher-photo">
+            <p><a href="http://lattes.cnpq.br/9192918759806343" class="button-link">Curriculum Vitae</a></p>
+        </div>
+        <h2>Sobre</h2><p>Mestre em Economia-UFPE, atua em atividades de pesquisa na área de Economia, com ênfase em análise de dados criminais e avaliação de políticas públicas. Membro do Programa de Educação Tutorial-PET, onde desenvolveu atividades de ensino, pesquisa e extensão. Atuou no PET durante período que compreende setembro de 2009 a dezembro de 2011. Bolsista Facepe entre Junho de 2011 e Maio de 2012, desenvolvendo suas atividades na Rede de Pesquisa Multidisciplinar de Bioetanol da UFPE. Atualmente desenvolve atividades no terceiro setor. Além disso fez parte da equipe da Universidade Federal de Pernambuco (UFPE), por meio do Inciti? Pesquisa e Inovação para as Cidades e do Departamento de Economia (Decon), que desenvolveu o Índice de Felicidade, um instrumento de pesquisa inédito em Pernambuco para entender os fatores que mais afetam a qualidade de vida dos recifenses, tendo sua aplicação no Projeto Parque Capibaribe.</p>
+        
+        <div class="productivity-dashboard">
+            <h3>Produtividade</h3>
+            <div class="metric-card">
+                <span class="metric-value">3</span>
+                <span class="metric-label">Publicações Registradas</span>
+            </div>
+        </div>
+        
+        <h2>Publicações</h2><ul><li>BEZERRA, I; OLIVEIRA, F. R.; e, MENEZES, T. A. IMPACTOS DAS POLITICAS DE SEGURANCA SOBRE A DIFUSAO DA CRIMINALIDADE ENTRE AS CIDADES: UMA APLICAÇAO DOS MODELOS DE ECONOMETRIA ESPACIAL. REVISTA ELETRÔNICA DOCUMENTO/MONUMENTO, v. 22, p. 220-237, 2017.</li><li>OLIVEIRA, F. R.; CASAGRANDE, D. L.; STUDART, G. V.; BEZERRÁ, I.; e, GUIMARÃES, P. H. M. Métodos de previsão para a taxa de desemprego mensal: uma análise de séries temporais. Revista de Economia da UEG, v. 13, p. 63-90, 2016.</li><li>OLIVEIRA, F. R.; CASAGRANDE, D. L.; STUDART, G. V.; BEZERRÁ, I.; e, GUIMARÃES, P. H. M. Salário, educação e experiencia: Uma abordagem econométrica. Nexos Econômicos (Salvador), v. 9, p. 7-20, 2015. Citações: ScoPus 1</li></ul>
+        <a href="index.html" class="back-button">← Voltar para a Página Principal</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Grupo de Estudos Regionais e Urbanos. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
+        

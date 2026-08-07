@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Barros Torres</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, rgba(240, 255, 240, 0.9) 0%, rgba(220, 255, 220, 0.95) 100%); /* Very light green gradient, high transparency */
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: rgba(90, 190, 90, 0.8); /* Softer green with more transparency */
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9); /* White with more transparency */
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+            flex-grow: 1;
+        }
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .researcher-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #7EC0EE; /* Softer blue border */
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #60B060; /* Softer green */
+            border-bottom: 2px solid rgba(190, 230, 190, 0.7); /* Lighter, more transparent separator */
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 1.8em;
+        }
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+            text-align: justify;
+        }
+        li {
+            margin-bottom: 0.8em;
+            text-align: justify;
+        }
+        .button-link {
+            display: inline-block;
+            background-color: rgba(120, 200, 120, 0.8); /* Softer green with transparency */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-top: 15px;
+        }
+        .button-link:hover {
+            background-color: rgba(100, 180, 100, 0.9);
+            transform: translateY(-2px);
+        }
+        .back-button {
+            display: inline-block;
+            background-color: rgba(170, 180, 190, 0.8); /* Softer grey with transparency */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: rgba(150, 160, 170, 0.9);
+        }
+        .productivity-dashboard {
+            background-color: rgba(230, 250, 230, 0.8); /* Very light green, high transparency */
+            border: 1px solid rgba(200, 240, 200, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .productivity-dashboard h3 {
+            color: #60B060;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .metric-card {
+            display: inline-block;
+            background-color: rgba(210, 240, 210, 0.7); /* Light green, more transparency */
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+        }
+        .metric-value {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #70D070;
+            display: block;
+        }
+        .metric-label {
+            font-size: 0.9em;
+            color: #555;
+            display: block;
+            margin-top: 5px;
+        }
+        .footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            background-color: rgba(255, 255, 255, 0.7); /* White with transparency */
+            border-top: 1px solid rgba(220, 220, 220, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Ricardo Barros Torres</h1>
+    </div>
+    <div class="container">
+        <div class="profile-header">
+            <img src="images/foto_ricardotorres.png" alt="Foto de Ricardo Barros Torres" class="researcher-photo">
+            <p><a href="http://lattes.cnpq.br/0635163030359156" class="button-link">Curriculum Vitae</a></p>
+        </div>
+        <h2>Sobre</h2><p>Possui graduação em Economia pela Universidade Católica do Salvador, especialização em Administração pela Universidade Federal da Bahia e mestrado em Planejamento Territorial e Desenvolvimento Social pela Universidade Católica do Salvador. Atualmente é Professor da Universidade do Estado da Bahia do campus XVII.</p>
+        
+        <div class="productivity-dashboard">
+            <h3>Produtividade</h3>
+            <div class="metric-card">
+                <span class="metric-value">2</span>
+                <span class="metric-label">Publicações Registradas</span>
+            </div>
+        </div>
+        
+        <h2>Publicações</h2><ul><li>TORRES, R, B . RELIGIOSIDADE TURISTICA E AS SUAS TRANSFORMAÇÕES ESPACIAIS NO MUNICIPIO DE BOM JESUS DA LAPA - BA. 1. ed. Belo Horizonte: Dialética, 2020. v. 1. 112p</li><li>TORRES, R. B. MUNICÍPIO DE BOM JESUS DA LAPA: ASPECTOS INICIAIS DO SEU SURGIMENTO. Humanidade e Ciências Sociais Aplicadas - Reflexões e Propostas. 4ed.São Paulo: Dialética, 2025, v. 4, p. 1-440.</li></ul>
+        <a href="index.html" class="back-button">← Voltar para a Página Principal</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Grupo de Estudos Regionais e Urbanos. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
+        

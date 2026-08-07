@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo de Estudos Regionais e Urbanos (GERU)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, rgba(245, 255, 245, 0.9) 0%, rgba(235, 255, 235, 0.95) 100%); /* Lighter green gradient, high transparency */
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: rgba(34, 139, 34, 0.8); /* Darker green with transparency */
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 15px auto;
+            max-width: 180px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.9); /* White with more transparency */
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+            text-align: center;
+            flex-grow: 1;
+        }
+        h2 {
+            color: #60B060; /* Softer green */
+            border-bottom: 2px solid rgba(190, 230, 190, 0.7); /* Lighter, more transparent separator */
+            padding-bottom: 10px;
+            margin-top: 40px;
+            font-size: 2em;
+        }
+        p {
+            margin-bottom: 1.5em;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+        .social-link {p
+            display: inline-block;
+            background-color: rgba(70, 140, 220, 0.8); /* Softer blue with transparency */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .social-link:hover {
+            background-color: rgba(50, 120, 200, 0.9);
+            transform: translateY(-2px);
+        }
+        .researcher-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .researcher-button {
+            display: block;
+            background-color: rgba(120, 200, 120, 0.8); /* Softer green with transparency */
+            color: white;
+            padding: 18px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            font-size: 1.1em;
+        }
+        .researcher-button:hover {
+            background-color: rgba(100, 180, 100, 0.9);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+        }
+        .footer {
+            margin-top: auto;
+            padding: 25px;
+            text-align: center;
+            color: #666;
+            font-size: 1em;
+            background-color: rgba(255, 255, 255, 0.7); /* White with transparency */
+            border-top: 1px solid rgba(220, 220, 220, 0.6);
+        }
+
+        /* Styles for Useful Links Grid */
+        .useful-links-grid {
+            display: grid; /* Changed from flex to grid */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Two columns, responsive */
+            gap: 20px; /* Spacing between cards */
+            margin-top: 30px;
+            justify-items: center; /* Center items within grid cells */
+        }
+        .useful-link-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            background-color: rgba(235, 250, 235, 0.8); /* Very light green with more transparency */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            height: 100%;
+            width: 100%;
+        }
+        .useful-link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        }
+        .useful-link-image {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .useful-link-description {
+            font-size: 0.9em;
+            font-weight: 600;
+            text-align: center;
+            color: #60B060;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="images/foto_logodogrupo.png" alt="Logo do Grupo de Estudos Regionais e Urbanos" class="logo">
+        <h1>Grupo de Estudos Regionais e Urbanos</h1>
+    </div>
+    <div class="container">
+        <h2>Sobre o Grupo</h2>
+        <p>
+O Grupo de Estudos Regionais e Urbanos (GERU) dedica-se à pesquisa aprofundada sobre as dinâmicas sociais, econômicas e ambientais que moldam o desenvolvimento regional e urbano. Nossos pesquisadores exploram temas como políticas públicas, desenvolvimento sustentável, desigualdades socioespaciais e planejamento urbano, buscando contribuir para soluções inovadoras e sustentáveis para os desafios contemporâneos.
+</p>
+        <p>
+            Acompanhe nossas novidades no Facebook:
+            <a href="https://www.facebook.com/profile.php?id=100063975493077" class="social-link">Facebook do GERU</a>
+        </p>
+
+        <h2>Pesquisadores Membros</h2>
+        <div class="researcher-grid">
+            <a href="ana_maria_taddei_cardoso_de_barros.html" class="researcher-button">Ana Maria Taddei Cardoso de Barros</a>
+<a href="ariel_gustavo_letti.html" class="researcher-button">Ariel Gustavo Letti</a>
+<a href="felipe_resende_oliveira.html" class="researcher-button">Felipe Resende Oliveira</a>
+<a href="inaldo_bezerra_da_silva_junior.html" class="researcher-button">Inaldo Bezerra da Silva Júnior</a>
+<a href="paulo_henrique_monteiro_guimaraes.html" class="researcher-button">Paulo Henrique Monteiro Guimarães</a>
+<a href="ricardo_barros_torres.html" class="researcher-button">Ricardo Barros Torres</a>
+<a href="ricardo_molto_pereira.html" class="researcher-button">Ricardo Molto Pereira</a>
+<a href="rogerio_pereira.html" class="researcher-button">Rogério Pereira</a>
+        </div>
+
+        <!-- Nova seção para Pesquisadores Convidados -->
+        <h2>Pesquisadores Convidados</h2>
+        <div class="researcher-grid">
+            <a href="erika_da_silva_dos_santos.html" class="researcher-button">Erika da Silva dos Santos</a>
+        </div>
+
+        <!-- Nova seção para Patrocinadores -->
+        <h2>Patrocinadores</h2>
+        <p>Aguardando informações sobre patrocinadores. Esta seção será atualizada em breve!</p>
+
+        <!-- Seção de Links Úteis -->
+        
+        <h2>Links Recomendados</h2>
+        <div class="useful-links-grid">
+
+        <a href="https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS" target="_blank" rel="noopener noreferrer" class="useful-link-card">
+            <img src="images/foto_worldbankgroup.png" alt="World Bank Group Data" class="useful-link-image">
+            <span class="useful-link-description">World Bank Group Data</span>
+        </a>
+        
+        <a href="https://www.kontur.io/datasets/population-dataset/" target="_blank" rel="noopener noreferrer" class="useful-link-card">
+            <img src="images/foto_kontur.png" alt="Kontur Population Dataset" class="useful-link-image">
+            <span class="useful-link-description">Kontur Population Dataset</span>
+        </a>
+        
+        <a href="https://www.openstreetmap.org/#map=4/-15.13/-53.19" target="_blank" rel="noopener noreferrer" class="useful-link-card">
+            <img src="images/foto_openstreetmap.png" alt="OpenStreetMap" class="useful-link-image">
+            <span class="useful-link-description">OpenStreetMap</span>
+        </a>
+        
+        <a href="https://www.globio.info/download-grip-dataset" target="_blank" rel="noopener noreferrer" class="useful-link-card">
+            <img src="images/foto_globalroad.png" alt="GLOBIO GRIP Dataset" class="useful-link-image">
+            <span class="useful-link-description">GLOBIO GRIP Dataset</span>
+        </a>
+        
+        <a href="https://eos.com/landviewer/?lat=None&lng=None&z=11" target="_blank" rel="noopener noreferrer" class="useful-link-card">
+            <img src="images/foto_eos.png" alt="EOS LandViewer" class="useful-link-image">
+            <span class="useful-link-description">EOS LandViewer</span>
+        </a>
+        
+        <a href="https://fsm-data.sprep.org/dataset/world-database-protected-areas" target="_blank" rel="noopener noreferrer" class="useful-link-card">
+            <img src="images/foto_fsm.png" alt="World Database Protected Areas" class="useful-link-image">
+            <span class="useful-link-description">World Database Protected Areas</span>
+        </a>
+        
+        <a href="https://ai.meta.com/ai-for-good/datasets/" target="_blank" rel="noopener noreferrer" class="useful-link-card">
+            <img src="images/foto_meta.png" alt="Meta AI for Good Datasets" class="useful-link-image">
+            <span class="useful-link-description">Meta AI for Good Datasets</span>
+        </a>
+        </div>
+
+        
+
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Grupo de Estudos Regionais e Urbanos. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
+        

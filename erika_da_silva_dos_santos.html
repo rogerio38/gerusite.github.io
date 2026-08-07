@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erika da Silva dos Santos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, rgba(240, 255, 240, 0.9) 0%, rgba(220, 255, 220, 0.95) 100%); /* Very light green gradient, high transparency */
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: rgba(90, 190, 90, 0.8); /* Softer green with more transparency */
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9); /* White with more transparency */
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+            flex-grow: 1;
+        }
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .researcher-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #7EC0EE; /* Softer blue border */
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #60B060; /* Softer green */
+            border-bottom: 2px solid rgba(190, 230, 190, 0.7); /* Lighter, more transparent separator */
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 1.8em;
+        }
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+            text-align: justify;
+        }
+        li {
+            margin-bottom: 0.8em;
+            text-align: justify;
+        }
+        .button-link {
+            display: inline-block;
+            background-color: rgba(120, 200, 120, 0.8); /* Softer green with transparency */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-top: 15px;
+        }
+        .button-link:hover {
+            background-color: rgba(100, 180, 100, 0.9);
+            transform: translateY(-2px);
+        }
+        .back-button {
+            display: inline-block;
+            background-color: rgba(170, 180, 190, 0.8); /* Softer grey with transparency */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: rgba(150, 160, 170, 0.9);
+        }
+        .productivity-dashboard {
+            background-color: rgba(230, 250, 230, 0.8); /* Very light green, high transparency */
+            border: 1px solid rgba(200, 240, 200, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .productivity-dashboard h3 {
+            color: #60B060;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .metric-card {
+            display: inline-block;
+            background-color: rgba(210, 240, 210, 0.7); /* Light green, more transparency */
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+        }
+        .metric-value {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #70D070;
+            display: block;
+        }
+        .metric-label {
+            font-size: 0.9em;
+            color: #555;
+            display: block;
+            margin-top: 5px;
+        }
+        .footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            background-color: rgba(255, 255, 255, 0.7); /* White with transparency */
+            border-top: 1px solid rgba(220, 220, 220, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Erika da Silva dos Santos</h1>
+    </div>
+    <div class="container">
+        <div class="profile-header">
+            <img src="images/foto_erika.png" alt="Foto de Erika da Silva dos Santos" class="researcher-photo">
+            <p><a href="https://www.cienciavitae.pt/BB14-F1A2-461F" class="button-link">Curriculum Vitae</a></p>
+        </div>
+        <h2>Sobre</h2><p>Erika Santos is Assistant Professor in Universidade de Lisboa - Instituto Superior de Agronomia (Portugal). With a background in Biology and Scientific Master in Nature Conservation and Management, she has a European PhD in Environmental Engineering (Universidade de Lisboa and Universidad de Santiago de Compostela from Spain) followed by post-doctoral grant on Agricultural and Food Biotechnology at CICECO - Aveiro Institute of Materials and Universidad de Santiago de Compostela. She has more than 20 years of academic experience as lecturer, in which she taught in several curricular units of Degree, Master and professional courses from Portugal, Spain, Perú and Bolivia, and developed other academic functions. She has been advisor of 2 pos-PhD students, 2 PhD student, >15 MSc students, 26 BSc students and 7 students in technical formation as well as several works of students (BSc, MSc, PhD) and researchers in international mobility (e.g. Spain, Italy, Peru, Argelia, Netherlands, Germany, Brazil). She participated, as coordinator (PI) and researcher, in several R&D projects (co)-financed by European/International and Portuguese funds, and companies. Nowadays, she has published 7 international chapters’ books, >50 articles in international indexes journals, 16 articles in national journals, >35 proceedings, and 2 technical books. She participated in several national/international technical and scientific congresses/seminars for presentations in the form of oral communication (by invitation: 17, speaker: >70) or poster (>100) as well as Editor or Editorial Coordinator of 3 books (3) and committee organizer. She has an h-index of 23. Her main interests and experience covers the physico-chemical and biological evaluation of different soil types (agricultural, forestry, urban, industrial), biogeochemistry, environmental recovery of degraded or contaminated areas with nature-based solutions (e.g. Technosols, phytostabilization with autochthones plants, biochar); soil-plant and soil-microrganism interaction; and valorisation of endogenous resources (e.g. plants used in the recovered systems by their natural value-added compounds).</p>
+        
+        <div class="productivity-dashboard">
+            <h3>Produtividade</h3>
+            <div class="metric-card">
+                <span class="metric-value">69</span>
+                <span class="metric-label">Publicações Registradas</span>
+            </div>
+        </div>
+        
+        <h2>Publicações</h2><ul><li>Yacine Benhalima; Erika S. Santos; Diego Arán. Autor correspondente: Erika S. Santos. "Divergent Dynamics of Aboveground and Soil Organic Carbon Stocks in Post-Fire Mediterranean Cork Oak Shrublands". Forests 17 7 (2026): 793. https://doi.org/10.3390/f17070793. Acesso aberto • Publicado • 10.3390/f17070793</li><li>Yacine Benhalima; Erika S. Santos; Diego Arán. Autor correspondente: Diego Arán. "Long-Term Assessment of Soil Carbon Dynamics in Post-Fire Conditions: Evidence from Digital Soil Mapping Approaches". Soil Systems 10 1 (2026): 17. https://doi.org/10.3390/soilsystems10010017. Acesso aberto • Publicado • 10.3390/soilsystems10010017</li><li>Lopes, Luís F.; Santos, Erika S.; Nunes, Leónia; Fernandes, Paulo M.; Acácio, Vanda. "Postfire oak afforestation in Portugal reveals trade-offs in the supply of ecosystem services". European Journal of Forest Research 145 1 (2026): https://doi.org/10.1007/s10342-025-01863-5. Publicado • 10.1007/s10342-025-01863-5</li><li>Gonçalo Filipe Victorino; João Lucas Coito; Mariana G. Lopes; Erika S. Santos; Sérgio A. Silva; José C. Pinheiro; Dora Miranda; Margarida Rocheta. "Effect of potassium hydrogel polymer on young grapevine growth and soil properties under controlled conditions". OENO One 60 1 (2026): https://doi.org/10.20870/oeno-one.2026.60.1.9466. Acesso aberto • Publicado • 10.20870/oeno-one.2026.60.1.9466</li><li>Benhalima, Yacine; Santos, Erika; Arán, Diego. Autor correspondente: Benhalima, Yacine. "Two decades of soil responses to fire in a Mediterranean ecosystem: a multi-indicator analysis". CATENA 262 (2026): 109647. https://doi.org/10.1016/j.catena.2025.109647. Publicado • 10.1016/j.catena.2025.109647</li><li>González-Guzmán, Adrián; Ponce, Maricruz Grados; Acuña, Alexander Cobeñas; Santos, Erika S.; Arán, Diego. Autor correspondente: Arán, Diego. "Alternative organic fertilisers for blueberry cultivation on Arenosols". Journal of Soils and Sediments 25 12 (2025): 3685-3699. https://doi.org/10.1007/s11368-025-04187-4. Publicado • 10.1007/s11368-025-04187-4</li><li>Arán, Diego; Abreu, Maria Manuela; Martins, Luisa Louro; Mourato, Miguel Pedro; Santos, Erika S.. Autor correspondente: Arán, Diego. "Arsenic Behavior in Paddy Soils: Sorption Capacity and the Role of Algal Addition". Soil Systems 9 4 (2025): 106. https://doi.org/10.3390/soilsystems9040106. Acesso aberto • Publicado • 10.3390/soilsystems9040106</li><li>Diego Arán; Osvaldo Santos; Rodrigo Feteira-Santos; Yacine Benhalima; Erika S. Santos. Autor correspondente: Diego Arán. "Soil Quality and Trace Element Risk in Urban and Rural Kitchen Gardens: A Comparative Analysis". Toxics 13 8 (2025): 697. https://doi.org/10.3390/toxics13080697. Acesso aberto • Publicado • 10.3390/toxics13080697</li><li>SANTOS, Erika S.; Maria Manuela Abreu; Sabina Rossini-Oliva. Autor correspondente: Santos, Erika S.. "Soil–Plant Characterization in Agrosilvopastoral System Established in a Fe-Mn Abandoned Mine After Long-Term Closure". Plants 14 1 (2025): 60. https://doi.org/10.3390/plants14010060. Acesso aberto • Publicado • 10.3390/plants14010060</li><li>ARÁN, DIEGO; Adelaida Patrasc-Lungu; Nogales, Amaia; Abreu, Maria Manuela; Santos, Erika. Autor correspondente: Santos, Erika. "Valorization of sulfide rich tailings with nature-based solutions for pasture lands". Journal of Geochemical Exploration 273 (2025): 107731. https://doi.org/10.1016/j.gexplo.2025.107731. Publicado</li><li>SANTOS, Erika S.; Afif, Elias; Forján, Rubén. "Editorial: By-product amendments for the remediation of metal and metalloid contaminated soils". Frontiers in Environmental Science 12 (2024): https://doi.org/10.3389/fenvs.2024.1498172. Publicado • 10.3389/fenvs.2024.1498172</li><li>FORJÁN, Rubén; Arias-Estévez, Manuel; Gallego, José Luis R.; Santos, Erika S.; Arenas-Lago, Daniel. "Biochar-nanoparticle combinations enhance the biogeochemical recovery of a post-mining soil". Science of The Total Environment 930 (2024): 172451. https://doi.org/10.1016/j.scitotenv.2024.172451. Acesso aberto • Publicado • 10.1016/j.scitotenv.2024.172451</li><li>MARCELINO, Sara; Pedro Gaspar; Arminda do Paço; Tânia Lima; Ana Monteiro; José Franco; Santos, Erika S.; Rebeca Campos; Carlos Lopes. "Towards Sustainable Agriculture: A Critical Analysis of Agrobiodiversity Assessment Methods and Recommendations for Effective Implementation". Applied Sciences 14 6 (2024): 2622. https://doi.org/10.3390/app14062622. Acesso aberto • Publicado • 10.3390/app14062622</li><li>MARCELINO, Sara M.; Pedro Dinis Gaspar; Arminda do Paço; Tânia M. Lima; Ana Monteiro; José Carlos Franco; Santos, Erika S.; Rebeca Campos; Carlos M. Lopes. "Agricultural Practices for Biodiversity Enhancement: Evidence and Recommendations for the Viticultural Sector". AgriEngineering 6 2 (2024): 1175-1194. https://doi.org/10.3390/agriengineering6020067. Acesso aberto • Publicado • 10.3390/agriengineering6020067</li><li>MARCELINO, Sara Morgado; Pedro Dinis Gaspar; Arminda Paço; Tânia M. Lima; Ana Monteiro; José Carlos Franco; Santos, Erika; Rebeca Campos; Carlos M. Lopes. "Decision Support System for the Assessment and Enhancement of Agrobiodiversity Performance". Sustainability 16 15 (2024): 6519. https://doi.org/10.3390/su16156519. Acesso aberto • Publicado • 10.3390/su16156519</li><li>MARQUES, João Horta; Inês Marques Duarte; Nunes, Leónia; Paes, Ana Paula; Yacine Benhalima; Luís Lopes; Ana Carolina Menoita; et al. "A influência da gestão florestal pós-fogo na diversidade da vegetação do sobreiral na Serra do Caldeirão.". Revista de Ciências Agrárias 47 1 (2024): 345-349. https://doi.org/10.19084/rca.35126. Publicado • 10.19084/rca.35126</li><li>FORS, Rosalba O.; Sorci-Uhmann, Emilia; Santos, Erika S.; Silva-Flores, Patricia; Abreu, Maria Manuela; Viegas, Wanda; Nogales, Amaia. "Influence of Soil Type, Land Use, and Rootstock Genotype on Root-Associated Arbuscular Mycorrhizal Fungi Communities and Their Impact on Grapevine Growth and Nutrition". Agriculture 13 11 (2023): 2163. http://dx.doi.org/10.3390/agriculture13112163. Acesso aberto • Publicado • 10.3390/agriculture13112163</li><li>NOGALES, Amaia; Navarro-Torre, Salvadora; Abreu, Maria Manuela; Santos, Erika S.; Cortinhas, Ana; Fors, Rosalba; Bailly, Marion; Róis, Ana Sofia; Caperta, Ana Delaunay. "Unravelling the Combined Use of Soil and Microbial Technologies to Optimize Cultivation of Halophyte Limonium algarvense (Plumbaginaceae) Using Saline Soils and Water". Soil Systems 7 3 (2023): 74. http://dx.doi.org/10.3390/soilsystems7030074. Acesso aberto • Publicado • 10.3390/soilsystems7030074</li><li>NAVARRO-TORRE, Salvadora; Garcia-Caparrós, Pedro; Nogales, Amaia; Abreu, Maria Manuela; Santos, Erika S.; Cortinhas, Ana Lúcia; Caperta, Ana Delaunay. "Sustainable agricultural management of saline soils in arid and semi-arid Mediterranean regions through halophytes, microbial and soil-based technologies". Environmental and Experimental Botany 212 (2023): 105397. http://dx.doi.org/10.1016/j.envexpbot.2023.105397. Publicado • 10.1016/j.envexpbot.2023.105397</li><li>SANTOS, Erika; Lungu, Adelaida Patrasc; Nogales, Amaia; Abreu, Maria Manuela; ARÁN, DIEGO. Autor correspondente: Santos, Erika. "Os bioinoculantes melhoram a recuperação de resíduos mineiros com aplicação de Tecnossolos para pastagens?". Revista de Ciências Agrárias 46 1 (2023): 160-165. Acesso aberto • Publicado</li><li>CARVALHO, Luísa C.; Santos, Erika S.; Saraiva, Jorge A.; Magalhães, M. Clara F.; Macías, Felipe; Abreu, Maria Manuela. "The Potential of Cistus salviifolius L. to Phytostabilize Gossan Mine Wastes Amended with Ash and Organic Residues". Plants 11 5 (2022): 588. http://dx.doi.org/10.3390/plants11050588. Acesso aberto • Publicado • 10.3390/plants11050588</li><li>SANTOS, Erika; Lungu, Adelaida Patrasc; Nogales, Amaia; Abreu, Maria Manuela; ARÁN, DIEGO. Autor correspondente: Santos, Erika. "Rehabilitation of sulfide tailings through designed Technosol and microbial-inoculant". Revista de Ciências Agrárias 45 4 (2022): 741-750. Acesso aberto • Publicado</li><li>ARÁN, DIEGO; Abreu, Maria Manuela; Diamantino Catarina; Carvalho Edgar; Santos, Erika S.. Autor correspondente: ARÁN, DIEGO. "Estrategia de cierre con Tecnosoles para la recuperación ambiental de la Mina de São Domingos". Revista de Ciências Agrárias 45 4 (2022): 811-820. Acesso aberto • Publicado</li><li>BENHALIMA, Yacin; Santos, Erika S.; ARÁN, DIEGO; Fonseca, Maria; Abreu, Maria Manuela; Inês Marques Duarte; Acácio, Vanda; et al. Autor correspondente: benhalima, Yacin. "Fire effects on soil quality in Quercus suber forests: a long-term assessment". Revista de Ciências Agrárias 45 4 (2022): 851-860. Acesso aberto • Publicado</li><li>BENHALIMA, Yacin; Santos, Erika S.; ARÁN, DIEGO; Fonseca, Maria; Maria Manuela Abreu; Inês Marques Duarte; Acácio, Vanda; et al. Autor correspondente: benhalima, Yacin. "Preliminary evaluation of physical characteristics of soils from Mediterranean cork oak forests: post fire long term assessment". Revista de Ciências Agrárias 45 4 (2022): 1171-1180. Acesso aberto • Publicado</li><li>ARENAS-LAGO, Daniel; Carvalho, Luisa C.; Santos, Erika S.; Abreu, Maria Manuela. "Influence of Seed Source and Soil Contamination on Ecophysiological Responses of Lavandula pedunculata in Rehabilitation of Mining Areas". Plants 11 1 (2021): 105. http://dx.doi.org/10.3390/plants11010105. Acesso aberto • Publicado • 10.3390/plants11010105</li><li>ARÁN, DIEGO; Santos, Erika S.; Abreu, Maria Manuela; Antelo, Juan; Macías, Felipe. "Use of combined tools for effectiveness evaluation of tailings rehabilitated with designed Technosol". Environmental Geochemistry and Health 44 6 (2021): 1857-1873. http://dx.doi.org/10.1007/s10653-021-01118-3. Publicado • 10.1007/s10653-021-01118-3</li><li>VICTORINO, Gonçalo; Santos, Erika S.; Maria Manuela Abreu; Wanda Viegas; Amaia Nogales. "Detrimental effects of copper and EDTA co-application on grapevine root growth and nutrient balance". Rhizosphere 19 (2021): 100392-100392. https://doi.org/10.1016/j.rhisph.2021.100392. Publicado • 10.1016/j.rhisph.2021.100392</li><li>NOBRE, C.; Fernandes, Ulisses; Duarte, Inês; Santos, Erika S.; Marques, Domitília; Gonçalves, Margarida. "Residual forestry biomass in Algarve: Potential use as a raw material for pellet production". BSS Magazine 3 (2021): 6-13. Publicado</li><li>ROSSINI-OLIVA, S.; Abreu, M. M.; Santos, Erika S.; Leidi, E. O.. "Soil–plant system and potential human health risk of Chinese cabbage and oregano growing in soils from Mn- and Fe-abandoned mines: microcosm assay". Environmental Geochemistry and Health 42 12 (2020): 4073-4086. http://dx.doi.org/10.1007/s10653-020-00514-5. Publicado • 10.1007/s10653-020-00514-5</li><li>JESÚS, Rodrigo-Comino; López-Vicente, Manuel; Kumar, Vinod; Rodríguez-Seijo, Andrés; Valkó, Orsolya; Rojas, Claudia; Pourghasemi, Hamid Reza; et al. "Soil Science Challenges in a New Era: A Transdisciplinary Overview of Relevant Topics". Air, Soil and Water Research 13 (2020): 117862212097749. http://dx.doi.org/10.1177/1178622120977491. Publicado • 10.1177/1178622120977491</li><li>TAPIA, Angela; Cornejo-La Torre, Melitza; Santos, Erika S.; ARÁN, DIEGO; Gallardo, Alfredo. Autor correspondente: Santos, Erika S.. "Improvement of chemical quality of percolated leachates by in situ application of aqueous organic wastes on sulfide mine tailings". Journal of Environmental Management 244 (2019): 154-160. http://dx.doi.org/10.1016/j.jenvman.2019.05.040. Publicado • 10.1016/j.jenvman.2019.05.040</li><li>SANTOS, Erika; Maria Manuela Abreu; Felipe Macías. Autor correspondente: Santos, Erika. "Rehabilitation of mining areas through integrated biotechnological approach: Technosols derived from organic/inorganic wastes and autochthonous plant development". Chemosphere 224 (2019): 765-775. https://doi.org/10.1016/j.chemosphere.2019.02.172. Publicado • 10.1016/j.chemosphere.2019.02.172</li><li>ROSSINI-OLIVA, Sabina; Santos, Erika; Maria Manuela Abreu. "Accumulation of Mn and Fe in aromatic plant species from the abandoned Rosalgar Mine and their potential risk to human health". Applied Geochemistry 104 (2019): 42-50. https://doi.org/10.1016/j.apgeochem.2019.03.013. Publicado • 10.1016/j.apgeochem.2019.03.013</li><li>CARVALHO, Luísa C.; Santos, Erika S.; Abreu, M. Manuela. "Unraveling the crucial role of the ascorbate-glutathione cycle in the resilience of Cistus monspeliensis L. to withstand high As concentrations". Ecotoxicology and Environmental Safety 171 (2019): 389-397. http://dx.doi.org/10.1016/j.ecoenv.2018.12.098. Publicado • 10.1016/j.ecoenv.2018.12.098</li><li>NOGALES, Amaia; Santos, Erika S.; Abreu, Maria Manuela; ARÁN, DIEGO; Victorino, Gonçalo; Pereira, Helena Sofia; Lopes, Carlos M.; Viegas, Wanda. "Mycorrhizal Inoculation Differentially Affects Grapevine's Performance in Copper Contaminated and Non-contaminated Soils". Frontiers in Plant Science 9 (2019): http://dx.doi.org/10.3389/fpls.2018.01906. Publicado • 10.3389/fpls.2018.01906</li><li>ARENAS-LAGO, Daniel; Santos, Erika; Carvalho, Luisa C.; Abreu, Maria Manuela; Andrade, Maria Luisa. "Cistus monspeliensis L. as a potential species for rehabilitation of soils with multielemental contamination under Mediterranean conditions". Environmental Science and Pollution Research 25 7 (2017): 6443-6455. http://dx.doi.org/10.1007/s11356-017-0957-3. Publicado • 10.1007/s11356-017-0957-3</li><li>SANTOS, Erika S.; Balseiro-Romero, Maria; Abreu, Maria Manuela; Macías, Felipe. "Bioextracts of Cistus ladanifer L. growing in São Domingos mine as source of valuable compounds". Journal of Geochemical Exploration 174 (2017): 84-90. http://dx.doi.org/10.1016/j.gexplo.2016.07.004. Publicado • 10.1016/j.gexplo.2016.07.004</li><li>SANTOS, Erika S.; Salazar, M.; Mendes, S.; Lopes, M.; Pacheco, J.; Marques, D.. Autor correspondente: Santos, Erika S.. "Rehabilitation of abandoned areas from a Mediterranean nature reserve by Salicornia crop: Influence of the salinity and shading". Arid Land Research and Management 31 1 (2017): 29-45. http://www.scopus.com/inward/record.url?eid=2-s2.0-84991471796&partnerID=MN8TOARS. Publicado • 10.1080/15324982.2016.1230796</li><li>SANTOS, Erika S.; Abreu, M.M.; Peres, S.; Magalhães, M.C.F.; Leitão, S.; Pereira, A.S.; Cerejeira, M.J.. "Potential of Tamarix africana and other halophyte species for phytostabilisation of contaminated salt marsh soils". Journal of Soils and Sediments 17 5 (2017): 1459-1473. http://www.scopus.com/inward/record.url?eid=2-s2.0-84949944807&partnerID=MN8TOARS. Publicado • 10.1007/s11368-015-1333-x</li><li>SANTOS, Erika S.; Abreu, M.M.; Macías, F.; Magalhães, M.C.F.. "Potential environmental impact of technosols composed of gossan and sulfide-rich wastes from São Domingos mine: assay of simulated leaching". Journal of Soils and Sediments 17 5 (2017): 1369-1383. http://www.scopus.com/inward/record.url?eid=2-s2.0-84981156846&partnerID=MN8TOARS.</li><li>SANTOS, Erika S.; Abreu, M.M.; Saraiva, J.A.. Autor correspondente: Santos, Erika S.. "Mutielemental concentration and physiological responses of Lavandula pedunculata growing in soils developed on different mine wastes". Environmental Pollution 213 (2016): 43-52. http://www.scopus.com/inward/record.url?eid=2-s2.0-84960948693&partnerID=MN8TOARS. Publicado • 10.1016/j.envpol.2016.02.001</li><li>SANTOS, Erika S.; Abreu, M.M.; Magalhães, M.C.F.. "Cistus ladanifer phytostabilizing soils contaminated with non-essential chemical elements". Ecological Engineering 94 (2016): 107-116. http://www.scopus.com/inward/record.url?eid=2-s2.0-84973115927&partnerID=MN8TOARS.</li><li>AENAS-LAGO, D.; Carvalho, Luísa; Santos, Erika S.; Abreu, M.M.. "The physiological mechanisms underlying the ability of Cistus monspeliensis L. from São Domingos mine to withstand high Zn concentrations in soils". Ecotoxicology and Environmental Safety 129 (2016): 219-227. http://www.scopus.com/inward/record.url?eid=2-s2.0-84963692183&partnerID=MN8TOARS. Publicado • 10.1016/j.ecoenv.2016.03.041</li><li>SANTOS, Erika S.; Abreu, M.M.; Macías, F.; de Varennes, A.. "Chemical quality of leachates and enzymatic activities in Technosols with gossan and sulfide wastes from the São Domingos mine". Journal of Soils and Sediments 16 4 (2016): 1366-1382. http://www.scopus.com/inward/record.url?eid=2-s2.0-84961176984&partnerID=MN8TOARS. 10.1007/s11368-015-1068-8</li><li>SANTOS, Erika S.; Abreu, M.M.; Macías, F.; de Varennes, A.. "Erratum to: Chemical quality of leachates and enzimatic activities in Technosols with gossan and sulfide wastes from the São Domingos mine". Journal of Soils and Sediments (2015): 1-2. http://www.scopus.com/inward/record.url?eid=2-s2.0-84952656596&partnerID=MN8TOARS. Publicado • 10.1007/s11368-015-1313-1</li><li>SANTOS, Erika S.; Magalhães, M.C.F.; Abreu, M.M.; Macías, F.. Autor correspondente: Santos, Erika S.. "Effects of organic/inorganic amendments on trace elements dispersion by leachates from sulfide-containing tailings of the São Domingos mine, Portugal. Time evaluation". Geoderma 226-227 1 (2014): 188-203. http://www.scopus.com/inward/record.url?eid=2-s2.0-84898830094&partnerID=MN8TOARS. Publicado • 10.1016/j.geoderma.2014.02.004</li><li>SANTOS, Erika S.; Abreu, M.M.; Batista, M.J.; Magalhães, M.C.F.; Fernandes, E.. "Inter-population variation on the accumulation and translocation of potentially harmful chemical elements in Cistus ladanifer L. from Brancanes, Caveira, Chança, Lousal, Neves Corvo and São Domingos mines in the Portuguese Iberian Pyrite Belt". Journal of Soils and Sediments 14 4 (2014): 758-772. http://www.scopus.com/inward/record.url?eid=2-s2.0-84897437934&partnerID=MN8TOARS. Publicado • 10.1007/s11368-014-0852-1</li><li>ABREU, M.M.; Lopes, J.; Santos, Erika S.; Magalhães, M.C.F.. "Ecotoxicity evaluation of an amended soil contaminated with uranium and radium using sensitive plants". Journal of Geochemical Exploration 142 (2014): 112-121. http://www.scopus.com/inward/record.url?eid=2-s2.0-84901694794&partnerID=MN8TOARS. Publicado • 10.1016/j.gexplo.2014.01.029</li><li>SANTOS, Erika S.; Abreu, M.M.; Macías, F.; de Varennes, A.. "Improvement of chemical and biological properties of gossan mine wastes following application of amendments and growth of Cistus ladanifer L". Journal of Geochemical Exploration 147 PB (2014): 173-181. http://www.scopus.com/inward/record.url?eid=2-s2.0-84912524806&partnerID=MN8TOARS. Publicado • 10.1016/j.gexplo.2014.07.007</li><li>SANTOS, Erika S.; Abreu, M.M.; de Varennes, A.; Macías, F.; Leitão, S.; Cerejeira, M.J.. "Evaluation of chemical parameters and ecotoxicity of a soil developed on gossan following application of polyacrylates and growth of Spergularia purpurea". Science of the Total Environment 461-462 (2013): 360-370. http://www.scopus.com/inward/record.url?eid=2-s2.0-84878912453&partnerID=MN8TOARS. Publicado • 10.1016/j.scitotenv.2013.05.003</li><li>SANTOS, Erika S.; Abreu, M.M.; Nabais, C.; Magalhães, M.C.F.. "Trace element distribution in soils developed on gossan mine wastes and Cistus ladanifer L. tolerance and bioaccumulation". Journal of Geochemical Exploration 123 (2012): 45-51. http://www.scopus.com/inward/record.url?eid=2-s2.0-84869875606&partnerID=MN8TOARS. Publicado • 10.1016/j.gexplo.2012.05.006</li><li>ABREU, M.M.; Santos, Erika S.; Magalhães, M.C.F.; Fernandes, E.. "Trace elements tolerance, accumulation and translocation in Cistus populifolius, Cistus salviifolius and their hybrid growing in polymetallic contaminated mine areas". Journal of Geochemical Exploration 123 (2012): 52-60. http://www.scopus.com/inward/record.url?eid=2-s2.0-84869863020&partnerID=MN8TOARS. Publicado • 10.1016/j.gexplo.2012.05.001</li><li>ABREU, M.M.; Santos, Erika S.; Ferreira, M.; Magalhães, M.C.F.. "Cistus salviifolius a promising species for mine wastes remediation". Journal of Geochemical Exploration 113 (2012): 86-93. http://www.scopus.com/inward/record.url?eid=2-s2.0-84856269704&partnerID=MN8TOARS.</li><li>MARTINS, M.; Santos, Erika S.; Faleiro, M.L.; Chaves, S.; Tenreiro, R.; Barros, R.J.; Barreiros, A.; Costa, M.C.. "Performance and bacterial community shifts during bioremediation of acid mine drainage from two Portuguese mines". International Biodeterioration and Biodegradation 65 7 (2011): 972-981. http://www.scopus.com/inward/record.url?eid=2-s2.0-80053251951&partnerID=MN8TOARS. Publicado • 10.1016/j.ibiod.2011.07.006</li><li>SANTOS, Erika S.; Ferreira, Mara; Abreu, Maria Manuela. "Contribuição de Cistus Ladanifer L. e Cistus Salviifolius L. na recuperação de áreas mineiras da faixa piritosa ibérica". Revista de Ciências Agrárias 34 2 (2011): 21-31. https://revistas.rcaap.pt/index.php/rca/article/view/15947. Acesso aberto • Publicado</li><li>ABREU, Maria Manuela; Santos, Erika S.; Fernandes, Eliana; Batista, Maria João; Ferreira, Mara. "Acumulação e translocação de elementos vestigiais em Cistus Ladanifer L. de áreas mineiras da FPI portuguesa". Revista de Ciências Agrárias 34 2 (2011): https://revistas.rcaap.pt/index.php/rca/article/view/15949. Acesso aberto • Publicado</li><li>SANTOS, Erika S.; Abreu, Maria Manuela; Saraiva, Jorge; Nabais, Cristina. "Actividades enzimáticas antioxidativas em Cistus Ladanifer provenientes de áreas não contaminadas em elementos vestigiais". Revista de Ciências Agrárias 34 2 (2011): 32-43. https://revistas.rcaap.pt/index.php/rca/article/view/15948. Acesso aberto • Publicado</li><li>FERNANDES, Eliana; Abreu, Maria Manuela; Santos, Erika S.; Magalhães, Maria Clara. "Comportamento de Cistus ladanifer L. e Cistus monspeliensis L. face aos elementos vestigiais em solos na área mineira do Chança". Revista de Ciências Agrárias 34 4 (2011): https://revistas.rcaap.pt/index.php/rca/article/view/15950. Acesso aberto • Publicado</li><li>MARTINS, M.; Faleiro, M.L.; Chaves, S.; Tenreiro, R.; Santos, Erika S.; Costa, M.C.. "Anaerobic bio-removal of uranium (VI) and chromium (VI): Comparison of microbial community structure". Journal of Hazardous Materials 176 1-3 (2010): 1065-1072. http://www.scopus.com/inward/record.url?eid=2-s2.0-74449087436&partnerID=MN8TOARS. Publicado • 10.1016/j.jhazmat.2009.11.149</li><li>MARTINS, M.; Santos, Erika S.; Pires, C.; Barros, R.J.; Costa, M.C.. "Production of irrigation water from bioremediation of acid mine drainage: comparing the performance of two representative systems". Journal of Cleaner Production 18 3 (2010): 248-253. http://www.scopus.com/inward/record.url?eid=2-s2.0-70649106795&partnerID=MN8TOARS. Publicado • 10.1016/j.jclepro.2009.10.013</li><li>SANTOS, Erika S.; Maria Manuela S. N. Reis Abreu; Mara Ferreira; Maria Clara F Magalhães. "Disponibilidade de Cu, Pb e Zn nas áreas mineiras de Canal Caveira e São Domingos Faixa Piritosa Ibérica". Revista de Ciências Agrárias XXXIII 1 (2010): 358-366. Acesso aberto • Publicado</li><li>LEAL, Susana; Nuno Grade; Antonio Santos.; Santos, Erika S.. "Influência da actividade do campo de golfe de San Lorenzo (Portugal) na nidificação de espécies de avifauna aquática". Studia 15 (2010): 36-41. Publicado</li><li>SANTOS, Erika S.; Abreu, M.M.; Nabais, C.; Saraiva, J.A.. Autor correspondente: Santos, Erika S.. "Trace elements and activity of antioxidative enzymes in Cistus ladanifer L. growing on an abandoned mine area". Ecotoxicology 18 7 (2009): 860-868. http://www.scopus.com/inward/record.url?eid=2-s2.0-69549088159&partnerID=MN8TOARS. Publicado • 10.1007/s10646-009-0329-y</li><li>COSTA, M.C.; Santos, Erika S.; Barros, R.J.; Pires, C.; Martins, M.. "Wine wastes as carbon source for biological treatment of acid mine drainage". Chemosphere 75 6 (2009): 831-836. http://www.scopus.com/inward/record.url?eid=2-s2.0-64049117331&partnerID=MN8TOARS. Publicado • 10.1016/j.chemosphere.2008.12.062</li><li>ABREU, Maria Manuela S. N. Reis; Santos, Erika S.; Maria Clara F Magalhães; Cristina Nabais. "Fases portadoras de As em solos da mina de São Domingos e em solos não contaminados do Pomarão e Serra do Caldeirão". Revista de Ciências Agrárias XXXI 1 (2009): 155-169. http://www.scielo.mec.pt/scielo.php?script=sci_abstract&pid=S0871-018X2009000100015&lng=en&nrm=iso&tlng=pt. Acesso aberto • Publicado</li><li>ABREU, Maria Manuela S. N. Reis; Santos, Erika S.; Carla Anjos; Maria Clara F Magalhães; Cristina Nabais. "Capacidade de absorção do Pb por plantas do género Cistus espontâneas em ambientes mineiros". Revista de Ciências Agrárias XXXI 1 (2009): 170-181. Acesso aberto • Publicado</li><li>SANTOS, Erika. "Fitorremediação de locais contaminados". Studia 5 9 (2005): 59-71. Publicado</li><li>DUARTE, Inês; Santos, Erika S.; Ceia, Filipe R.; Frutuoso, Ana; Carvalho Salomé. "Alterações da paisagem em Monchique: Causas e consequências". Studia 3 6 (2004): 149-155</li></ul>
+        <a href="index.html" class="back-button">← Voltar para a Página Principal</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Grupo de Estudos Regionais e Urbanos. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
+        
